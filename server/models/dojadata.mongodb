@@ -1,0 +1,602 @@
+// MongoDB Playground
+// To disable this template go to Settings | MongoDB | Use Default Template For Playground.
+// Make sure you are connected to enable completions and to be able to run a playground.
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// Select the database to use.
+use('example_db');
+
+// The drop() command destroys all data from a collection.
+// Make sure you run it against the correct database and collection.
+
+// Insert a few documents into the sales collection.
+db.profiles.insertMany([
+    {
+      "text": "@dojafenty @TheKittensRoom @ianndior Ive never heard it and Ive never made a song with him ever",
+      "created_at": "2021-12-09T23:42:45.000Z",
+      "author_id": "568545739",
+      "id": "1469090169211006982"
+    },
+    {
+      "text": "@TheKittensRoom @ianndior No we're not.",
+      "created_at": "2021-12-09T23:41:30.000Z",
+      "author_id": "568545739",
+      "id": "1469089853883228166"
+    },
+    {
+      "text": "@dojasgallery idk anything about this",
+      "created_at": "2021-12-09T20:50:34.000Z",
+      "author_id": "568545739",
+      "id": "1469046838196158469"
+    },
+    {
+      "text": "@dojacatscat @whodatflowerboi i dont know who this is.",
+      "created_at": "2021-12-09T20:49:32.000Z",
+      "author_id": "568545739",
+      "id": "1469046577268408320"
+    },
+    {
+      "text": "HANDSTAND VIDEO OUT NOW WITH @FrencHMonTanA &amp; @Saweetie https://t.co/toFp433rXo",
+      "created_at": "2021-12-09T00:16:25.000Z",
+      "author_id": "568545739",
+      "id": "1468736254380548098"
+    },
+    {
+      "text": "@onikadoja2 @NikitaBanana3 And that’s your weak and irrelevant opinion now hop off my dick you’re a fuckin nerd and you’re obsessed bitch. Take up golf.",
+      "created_at": "2021-12-08T20:10:49.000Z",
+      "author_id": "568545739",
+      "id": "1468674449033551884"
+    },
+    {
+      "text": "RT @FrencHMonTanA: She wanna hold it in her hand like a Oscar \uD83D\uDD74\uD83C\uDFFD\nHandstand video out now \n@dojacat @saweetie https://t.co/Urv86rapba https:…",
+      "created_at": "2021-12-08T17:13:45.000Z",
+      "author_id": "568545739",
+      "id": "1468629887426736128"
+    },
+    {
+      "text": "LMAOAOAOAOA LETS GOOOOOOOOOOOOOOOOOOOO",
+      "created_at": "2021-12-08T17:05:58.000Z",
+      "author_id": "568545739",
+      "id": "1468627929462673413"
+    },
+    {
+      "text": "I'm watching Handstand with yall right now. I see the chat too bitch. sadhkashfsldkjahkkdafjlsjfk 1 MINUTE LEFT",
+      "created_at": "2021-12-08T17:01:30.000Z",
+      "author_id": "568545739",
+      "id": "1468626805447921668"
+    },
+    {
+      "text": "RT @scarletsbxtch: @DojaCat I put my bluetooth speaker up my ass and started streaming love to dream",
+      "created_at": "2021-12-07T23:56:46.000Z",
+      "author_id": "568545739",
+      "id": "1468368920855945219"
+    },
+    {
+      "text": "Feel my music deep inside of you, cowboy.",
+      "created_at": "2021-12-07T23:53:17.000Z",
+      "author_id": "568545739",
+      "id": "1468368042917007362"
+    },
+    {
+      "text": "I’m glad that you guys enjoy it when I put my music inside you",
+      "created_at": "2021-12-07T23:52:02.000Z",
+      "author_id": "568545739",
+      "id": "1468367729371619332"
+    },
+    {
+      "text": "@davide_bonardo @DojaNews Nobody tells me what the fuck to do.",
+      "created_at": "2021-12-07T21:55:16.000Z",
+      "author_id": "568545739",
+      "id": "1468338343138275338"
+    },
+    {
+      "text": "@h0neyyx_ @DojaNews oh shut up",
+      "created_at": "2021-12-07T21:53:47.000Z",
+      "author_id": "568545739",
+      "id": "1468337970738614275"
+    },
+    {
+      "text": "lol part 2 https://t.co/yfQ48LMcxA",
+      "created_at": "2021-12-07T21:34:40.000Z",
+      "author_id": "568545739",
+      "id": "1468333162833059844"
+    },
+    {
+      "text": "lol https://t.co/QYeAPmvvay",
+      "created_at": "2021-12-07T21:33:56.000Z",
+      "author_id": "568545739",
+      "id": "1468332975205109765"
+    },
+    {
+      "text": "i like when people choose to eat apples like the whole apple that shit is cute as fuck and such a wholesome thing to do.",
+      "created_at": "2021-12-07T20:18:28.000Z",
+      "author_id": "568545739",
+      "id": "1468313982826127377"
+    },
+    {
+      "text": "my ass",
+      "created_at": "2021-12-07T16:13:07.000Z",
+      "author_id": "568545739",
+      "id": "1468252239055699971"
+    },
+    {
+      "text": "RT @DojaNews: .@DojaCat reminding people she's still thick. \"I'm still thick....B*TCH\" https://t.co/uJLpj06k1O",
+      "created_at": "2021-12-05T17:40:23.000Z",
+      "author_id": "568545739",
+      "id": "1467549424867954695"
+    },
+    {
+      "text": "https://t.co/jr9dZFg7SA",
+      "created_at": "2021-12-05T03:54:21.000Z",
+      "author_id": "568545739",
+      "id": "1467341546974445573"
+    },
+    {
+      "text": "https://t.co/r9mNYspenT",
+      "created_at": "2021-12-04T21:24:36.000Z",
+      "author_id": "568545739",
+      "id": "1467243465641582593"
+    },
+    {
+      "text": "I teamed up with @GirlsWhoCode for my Woman music video and created the first ever codable music video!\n\nHead over to https://t.co/gGQ49fB6jw to customize features \uD83D\uDC95 https://t.co/j1rOP89TiH",
+      "created_at": "2021-12-03T23:55:58.000Z",
+      "author_id": "568545739",
+      "id": "1466919167064346625"
+    },
+    {
+      "text": "Woman Music Video \uD83C\uDF05 OUT NOW!! \nhttps://t.co/J6NJQGpLN3\n\nDirected by: @childartiste \nQueen: @TEYANATAYLOR https://t.co/eADhPuMJW7",
+      "created_at": "2021-12-03T15:16:12.000Z",
+      "author_id": "568545739",
+      "id": "1466788363881496583"
+    },
+    {
+      "text": "Woman 12/3 https://t.co/2Vq88Gm7b4",
+      "created_at": "2021-12-02T23:44:14.000Z",
+      "author_id": "568545739",
+      "id": "1466553827310505986"
+    },
+    {
+      "text": "I know I shoulda kept my mouth shut cuz now everybody worried. Last night was INFUCKINSANE. I wanted to keep going. https://t.co/UlOdNtDKZ7",
+      "created_at": "2021-12-01T20:21:11.000Z",
+      "author_id": "568545739",
+      "id": "1466140339840897040"
+    },
+    {
+      "text": "@ffuckpancakes hell fuckin no it was only a 20 min set and I was juiced cuz we got new outfits also I fuckin love Texas so idk why people saying crazy shit",
+      "created_at": "2021-12-01T20:16:03.000Z",
+      "author_id": "568545739",
+      "id": "1466139050553790474"
+    },
+    {
+      "text": "@DojaMcrae Never. Last night was everything so i’m confused af",
+      "created_at": "2021-12-01T20:14:48.000Z",
+      "author_id": "568545739",
+      "id": "1466138734097801216"
+    },
+    {
+      "text": "RT @aper6014: @DojaCat the wig was SECURE https://t.co/LYTDNcyVWS",
+      "created_at": "2021-12-01T20:09:46.000Z",
+      "author_id": "568545739",
+      "id": "1466137469854916617"
+    },
+    {
+      "text": "wait what the fuck is going on? https://t.co/RdogzWs2lJ",
+      "created_at": "2021-12-01T20:07:58.000Z",
+      "author_id": "568545739",
+      "id": "1466137016656084994"
+    },
+    {
+      "text": "@tacossdepollo I wasn’t crying what are you talking about",
+      "created_at": "2021-12-01T20:06:57.000Z",
+      "author_id": "568545739",
+      "id": "1466136759218094081"
+    },
+    {
+      "text": "“I want your clit in a special way” - Slum Village",
+      "created_at": "2021-12-01T19:04:57.000Z",
+      "author_id": "568545739",
+      "id": "1466121157095174150"
+    },
+    {
+      "text": "sorry i said dallas i meant fortworth idk where tf i was i love u guys regardless ❤️ https://t.co/DG4Nwhy4IZ",
+      "created_at": "2021-12-01T05:07:37.000Z",
+      "author_id": "568545739",
+      "id": "1465910433970327553"
+    },
+    {
+      "text": "that was fun bitch",
+      "created_at": "2021-12-01T04:58:35.000Z",
+      "author_id": "568545739",
+      "id": "1465908162456924162"
+    },
+    {
+      "text": "fucky wucky",
+      "created_at": "2021-11-26T01:26:47.000Z",
+      "author_id": "568545739",
+      "id": "1464042918914625536"
+    },
+    {
+      "text": "sorry for complaining",
+      "created_at": "2021-11-25T23:46:00.000Z",
+      "author_id": "568545739",
+      "id": "1464017557522771973"
+    },
+    {
+      "text": "RT @wiz_thcreator: THE BACKGROUND VOCAL ON DOJA CAT NEED TO KNOW IS TOP FUCKING 2 https://t.co/AE45eJ30Un",
+      "created_at": "2021-11-25T21:26:34.000Z",
+      "author_id": "568545739",
+      "id": "1463982467459661829"
+    },
+    {
+      "text": "@DJSemtex @Alchemist @madlib @JIDsv @JIDsv \uD83D\uDE4F❤️\uD83D\uDE4F❤️\uD83D\uDE4F❤️\uD83D\uDE4F",
+      "created_at": "2021-11-24T18:20:50.000Z",
+      "author_id": "568545739",
+      "id": "1463573337733402628"
+    },
+    {
+      "text": "I’m horny again",
+      "created_at": "2021-11-23T23:37:07.000Z",
+      "author_id": "568545739",
+      "id": "1463290544705060867"
+    },
+    {
+      "text": "@zackfox wyd baby",
+      "created_at": "2021-11-23T22:16:26.000Z",
+      "author_id": "568545739",
+      "id": "1463270243573264388"
+    },
+    {
+      "text": "zack fox is cute",
+      "created_at": "2021-11-23T18:23:03.000Z",
+      "author_id": "568545739",
+      "id": "1463211510332018688"
+    },
+    {
+      "text": "that’s dope man wow",
+      "created_at": "2021-11-23T18:18:37.000Z",
+      "author_id": "568545739",
+      "id": "1463210393187192834"
+    },
+    {
+      "text": "8",
+      "created_at": "2021-11-23T18:10:11.000Z",
+      "author_id": "568545739",
+      "id": "1463208272215695365"
+    },
+    {
+      "text": "8?!?!??!!???!",
+      "created_at": "2021-11-23T18:10:06.000Z",
+      "author_id": "568545739",
+      "id": "1463208250933866502"
+    },
+    {
+      "text": "yo wtf 8?!?!?!??",
+      "created_at": "2021-11-23T18:09:51.000Z",
+      "author_id": "568545739",
+      "id": "1463208188124139520"
+    },
+    {
+      "text": "remember this moment? https://t.co/12vxCgEvVN",
+      "created_at": "2021-11-23T17:15:39.000Z",
+      "author_id": "568545739",
+      "id": "1463194548960522241"
+    },
+    {
+      "text": "peepee vagina",
+      "created_at": "2021-11-23T04:27:01.000Z",
+      "author_id": "568545739",
+      "id": "1463001113620140041"
+    },
+    {
+      "text": "stfu https://t.co/CuOfu0Ug7D",
+      "created_at": "2021-11-23T04:26:38.000Z",
+      "author_id": "568545739",
+      "id": "1463001015670640644"
+    },
+    {
+      "text": "wyd https://t.co/vP0m2tSMRF",
+      "created_at": "2021-11-23T00:27:17.000Z",
+      "author_id": "568545739",
+      "id": "1462940784013942785"
+    },
+    {
+      "text": "Hey @tacobell, just heard my song in your commercial… I'm a #TacoBellPartner now. So where's my Mexican Pizza?",
+      "created_at": "2021-11-22T19:01:09.000Z",
+      "author_id": "568545739",
+      "id": "1462858709223178243"
+    },
+    {
+      "text": "alright",
+      "created_at": "2021-11-20T11:07:35.000Z",
+      "author_id": "568545739",
+      "id": "1462014757846740993"
+    },
+    {
+      "text": "RT @DojaCat: okay",
+      "created_at": "2021-11-20T11:07:29.000Z",
+      "author_id": "568545739",
+      "id": "1462014732131397632"
+    },
+    {
+      "text": "okay",
+      "created_at": "2021-11-20T11:07:21.000Z",
+      "author_id": "568545739",
+      "id": "1462014696802840578"
+    },
+    {
+      "text": "https://t.co/PQQ5ya4Wq6 https://t.co/ZJH3HHOwlD",
+      "created_at": "2021-11-20T03:40:20.000Z",
+      "author_id": "568545739",
+      "id": "1461902203531137027"
+    },
+    {
+      "text": "I'm 26 I don't do homework. Do you mean helping you with your homework pov? https://t.co/CxgJRmmQQw",
+      "created_at": "2021-11-20T03:35:10.000Z",
+      "author_id": "568545739",
+      "id": "1461900903418523653"
+    },
+    {
+      "text": "https://t.co/QwYRyUyyF8 https://t.co/LBtAhrKeys",
+      "created_at": "2021-11-20T03:23:03.000Z",
+      "author_id": "568545739",
+      "id": "1461897852959932424"
+    },
+    {
+      "text": "hangin out pov https://t.co/cnK0higVqW",
+      "created_at": "2021-11-20T03:15:23.000Z",
+      "author_id": "568545739",
+      "id": "1461895921407459331"
+    },
+    {
+      "text": "welcome if ur new here https://t.co/mvlIszWE8H",
+      "created_at": "2021-11-20T03:05:48.000Z",
+      "author_id": "568545739",
+      "id": "1461893513101012994"
+    },
+    {
+      "text": "ok",
+      "created_at": "2021-11-19T20:23:08.000Z",
+      "author_id": "568545739",
+      "id": "1461792176539521026"
+    },
+    {
+      "text": "OOOOH its \"what if\" nvm https://t.co/AvnFgZ5K8V",
+      "created_at": "2021-11-19T02:18:53.000Z",
+      "author_id": "568545739",
+      "id": "1461519315824381954"
+    },
+    {
+      "text": "RT @CFBPlayoff: \uD83C\uDFB6 \uD835\uDE52\uD835\uDE5A \uD835\uDE56\uD835\uDE5E\uD835\uDE63'\uD835\uDE69 \uD835\uDE5C\uD835\uDE64\uD835\uDE69 \uD835\uDE63\uD835\uDE64\uD835\uDE69\uD835\uDE5D\uD835\uDE5E\uD835\uDE63' \uD835\uDE69\uD835\uDE64 \uD835\uDE61\uD835\uDE64\uD835\uDE68\uD835\uDE5A, \uD835\uDE64\uD835\uDE5D, \uD835\uDE64\uD835\uDE5D \uD83C\uDFB6  \n\nMark your calendars for January 8 and see @DojaCat perform at #ATTPlayoffPlayli…",
+      "created_at": "2021-11-18T22:20:43.000Z",
+      "author_id": "568545739",
+      "id": "1461459381401231366"
+    },
+    {
+      "text": "Exprienxs https://t.co/1rWR865QXG",
+      "created_at": "2021-11-18T21:42:37.000Z",
+      "author_id": "568545739",
+      "id": "1461449792186245120"
+    },
+    {
+      "text": "I never said I did. https://t.co/njPWO4Mwxa",
+      "created_at": "2021-11-18T21:41:11.000Z",
+      "author_id": "568545739",
+      "id": "1461449432289841154"
+    },
+    {
+      "text": "It has nothing to do with my own personal experience. https://t.co/UWr1Hrqrzh",
+      "created_at": "2021-11-18T21:38:41.000Z",
+      "author_id": "568545739",
+      "id": "1461448801898565636"
+    },
+    {
+      "text": "I don't know. https://t.co/l5ME28RH9H",
+      "created_at": "2021-11-18T21:28:29.000Z",
+      "author_id": "568545739",
+      "id": "1461446235374587907"
+    },
+    {
+      "text": "These past 300,000 years have really sucked.",
+      "created_at": "2021-11-18T21:27:15.000Z",
+      "author_id": "568545739",
+      "id": "1461445923720941569"
+    },
+    {
+      "text": "boobs",
+      "created_at": "2021-11-18T20:26:39.000Z",
+      "author_id": "568545739",
+      "id": "1461430675798564867"
+    },
+    {
+      "text": "lol",
+      "created_at": "2021-11-16T23:29:50.000Z",
+      "author_id": "568545739",
+      "id": "1460751997133488128"
+    },
+    {
+      "text": "@honeymoon_315 @cucoswhore @DojaNews @JIDsv as he should;would",
+      "created_at": "2021-11-16T23:28:43.000Z",
+      "author_id": "568545739",
+      "id": "1460751715578175488"
+    },
+    {
+      "text": "@NikitaBanana3 @szaviews @JOJIARCHlVE yes i ken",
+      "created_at": "2021-11-16T23:12:43.000Z",
+      "author_id": "568545739",
+      "id": "1460747688719249409"
+    },
+    {
+      "text": "@szaviews @JOJIARCHlVE ur loud ur really loud right now",
+      "created_at": "2021-11-16T23:02:39.000Z",
+      "author_id": "568545739",
+      "id": "1460745159012806662"
+    },
+    {
+      "text": "@JOJIARCHlVE keep it the fuck down I'm not doing this w u right now",
+      "created_at": "2021-11-16T22:50:50.000Z",
+      "author_id": "568545739",
+      "id": "1460742185012264966"
+    },
+    {
+      "text": "@HubDoja no im not",
+      "created_at": "2021-11-16T00:13:00.000Z",
+      "author_id": "568545739",
+      "id": "1460400472666165248"
+    },
+    {
+      "text": "i think i hit myself in the teeth with the microphone by accident and was mortified that i may have broke my veneers https://t.co/mvieuFWZXq",
+      "created_at": "2021-11-15T02:00:36.000Z",
+      "author_id": "568545739",
+      "id": "1460065165433446402"
+    },
+    {
+      "text": "https://t.co/oLKP3oueJL",
+      "created_at": "2021-11-15T01:43:18.000Z",
+      "author_id": "568545739",
+      "id": "1460060811590656002"
+    },
+    {
+      "text": "not horny anymore",
+      "created_at": "2021-11-14T20:52:22.000Z",
+      "author_id": "568545739",
+      "id": "1459987596658896901"
+    },
+    {
+      "text": "u don’t know me https://t.co/VARdox19kw",
+      "created_at": "2021-11-14T09:59:04.000Z",
+      "author_id": "568545739",
+      "id": "1459823186971807748"
+    },
+    {
+      "text": "I’m still horny https://t.co/Z5LtZXsd1y",
+      "created_at": "2021-11-14T09:48:52.000Z",
+      "author_id": "568545739",
+      "id": "1459820619562831874"
+    },
+    {
+      "text": "I’m horny",
+      "created_at": "2021-11-14T05:16:41.000Z",
+      "author_id": "568545739",
+      "id": "1459752122581282818"
+    },
+    {
+      "text": "@TheShadeRoom delete this",
+      "created_at": "2021-11-13T03:32:30.000Z",
+      "author_id": "568545739",
+      "id": "1459363516301791233"
+    },
+    {
+      "text": "#NewProfilePic https://t.co/UDYWVFLxAD",
+      "created_at": "2021-11-12T23:39:30.000Z",
+      "author_id": "568545739",
+      "id": "1459304879411789825"
+    },
+    {
+      "text": "glasses https://t.co/lv8dAbYQFh",
+      "created_at": "2021-11-12T22:26:18.000Z",
+      "author_id": "568545739",
+      "id": "1459286460096401409"
+    },
+    {
+      "text": "pretty ricky is important",
+      "created_at": "2021-11-09T08:51:46.000Z",
+      "author_id": "568545739",
+      "id": "1457994311476256783"
+    },
+    {
+      "text": "@NUNCHVCKS @cookieekawaii ur a fucking idiot",
+      "created_at": "2021-11-05T18:05:22.000Z",
+      "author_id": "568545739",
+      "id": "1456684078061613059"
+    },
+    {
+      "text": "Vibe",
+      "created_at": "2021-11-05T17:04:55.000Z",
+      "author_id": "568545739",
+      "id": "1456668862670258181"
+    },
+    {
+      "text": "https://t.co/P8Sy81gL6g",
+      "created_at": "2021-11-04T20:23:35.000Z",
+      "author_id": "568545739",
+      "id": "1456356472862896134"
+    },
+    {
+      "text": "RT @swxpos: @dojasgallery @DojaCat i heard “i got a man but i want you” and “its just nerves its just dick”",
+      "created_at": "2021-11-04T20:16:52.000Z",
+      "author_id": "568545739",
+      "id": "1456354780322820144"
+    },
+    {
+      "text": "@atljacobbeatz \uD83D\uDE2D\uD83D\uDE2D\uD83D\uDE2D\uD83D\uDE2D\uD83D\uDE2D\uD83D\uDE02\uD83D\uDE02\uD83D\uDE02",
+      "created_at": "2021-11-04T20:12:05.000Z",
+      "author_id": "568545739",
+      "id": "1456353577119608854"
+    },
+    {
+      "text": "RT @sorryelite: Mariah Carey on November 1st: https://t.co/mkFIQDGmv3",
+      "created_at": "2021-11-01T19:01:34.000Z",
+      "author_id": "568545739",
+      "id": "1455248670178222081"
+    },
+    {
+      "text": "You’re unheard of https://t.co/EyUwKJX8oo",
+      "created_at": "2021-11-01T07:23:16.000Z",
+      "author_id": "568545739",
+      "id": "1455072936054849541"
+    },
+    {
+      "text": "RT @Hayden_Williams: @PopCrave @DojaCat She loved my version of Cynthia &amp; wanted to wear the look \uD83D\uDE0D",
+      "created_at": "2021-11-01T06:08:50.000Z",
+      "author_id": "568545739",
+      "id": "1455054203408117761"
+    },
+    {
+      "text": "fuck me",
+      "created_at": "2021-11-01T04:02:30.000Z",
+      "author_id": "568545739",
+      "id": "1455022413276606465"
+    },
+    {
+      "text": "Make  love to me",
+      "created_at": "2021-11-01T04:02:25.000Z",
+      "author_id": "568545739",
+      "id": "1455022390224719875"
+    },
+    {
+      "text": "if u reading this shut the fuck up",
+      "created_at": "2021-10-30T12:19:24.000Z",
+      "author_id": "568545739",
+      "id": "1454422685610491907"
+    },
+    {
+      "text": "Yall don't know bout red dead dedemption 2?",
+      "created_at": "2021-10-29T17:23:52.000Z",
+      "author_id": "568545739",
+      "id": "1454136917767835653"
+    },
+    {
+      "text": "im gonna play rdd2 on twitch in 10-15 minutes",
+      "created_at": "2021-10-29T17:22:37.000Z",
+      "author_id": "568545739",
+      "id": "1454136603878641667"
+    },
+    {
+      "text": ":( ok bye",
+      "created_at": "2021-10-28T14:23:54.000Z",
+      "author_id": "568545739",
+      "id": "1453729239371444226"
+    },
+    {
+      "text": "? https://t.co/ClZWE7TIpM",
+      "created_at": "2021-10-28T14:17:44.000Z",
+      "author_id": "568545739",
+      "id": "1453727688758206467"
+    },
+    {
+      "text": "????????????????? https://t.co/jx3911JCF9",
+      "created_at": "2021-10-28T14:16:14.000Z",
+      "author_id": "568545739",
+      "id": "1453727309379211277"
+    }
+  ])

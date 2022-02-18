@@ -1,36 +1,59 @@
-import React from 'react';
-import axios from 'axios';
+// import React, { useEffect, useState } from 'react';
+// import axios from 'axios';
+// import { getAllProfiles } from './services/profileService';
 
-class LiveTweet extends React.Component {
-  state = {
-    tweet: []
-  }
+// function themLiveTweets() {
+   
+// // const [latestTweetsData, setLatestTweetsData] = useState(null);
+// // const [loading, setLoading] = useState(false);
+// // const [error, setError] = useState(null);
 
-  componentDidMount() {
-    const config = {
-    Authorization: `Bearer AAAAAAAAAAAAAAAAAAAAAJaFYwEAAAAATcAKQ9UVnUH3YzdVqbaUe9cy144%3DwetUPFGUY6rafsx4oNGNRAy3uYE7CTA9EdWTrtvydVsGMNtqtq`
-      };
-    const apiUrl = `https://api.twitter.com/2/users/:568545739/tweets?tweet.fields=created_at&expansions=author_id&user.fields=created_at&public_metrics&max_results=1`;
-    axios.get(apiUrl, config)
-      .then(res => {
-        const tweets = res.data;
-        this.setState({ tweets });
-      })
-  }
+// // useEffect(() => {
+// //     async function getLastestTweets() {
+// //         if (!latestTweetsData) {
+// //             const response = await getAllProfiles();
+// //             setLatestTweetsData(response)
+// //             console.log(getLastestTweets)
+// //         }
+// //     }
 
-  render() {
-    return (
-      <ul>
-        {
-          this.state.tweets
-            .map(tweet =>
-              <li key={tweet.id}>{tweet.text}</li>
-            )
-        }
-      </ul>
-    )
-  }
-}
+// //     getLastestTweets();
+// // }, [latestTweetsData]);
+
+// const LiveTweet = ({latestTweetsData, renderProfile}) => {
 
 
-export default LiveTweet;
+//     return ( 
+//         <div className="latest_tweet">
+//         <ul>
+//         {latestTweetsData && latestTweetsData.length > 0 ? (
+//           latestTweetsData.map((latestTweets) => renderProfile(latestTweets))
+//         ) : (
+//           <p>No tweets found</p>
+//         )}
+//       </ul> 
+//       </div> );
+// }
+// }
+
+// //     useEffect(() => {
+// //         setLoading(true);
+// //         axios
+// //         .get(url)
+// //         .then((response) => {
+// //             setLatestTweetsData(response.latestTweetsData);
+// //         })
+// //         .catch((err) => {
+// //             setError(err);
+// //         })
+// //         .finally(() => {
+// //             setLoading(false);
+// //         });
+// //     }, [url]);
+
+// //     return { latestTweetsData, loading, error }
+// // }
+
+
+ 
+// export default LiveTweets;

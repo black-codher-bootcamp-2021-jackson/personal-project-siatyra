@@ -1,13 +1,16 @@
-const TweetList = ({profiles, renderProfile}) => {
+const TweetList = (props) => {
+
+  const profiles = props.profiles;
+  const renderTweet = props.renderTweet;
 
 
     return ( 
         <div className="tweetlist">
         <ul>
         {profiles && profiles.length > 0 ? (
-          profiles.map((profile) => renderProfile(profile))
+          profiles.map((profile) => renderTweet(profile))
         ) : (
-          <p>No profiles found</p>
+          <p>No tweets found</p>
         )}
       </ul> 
       </div> );

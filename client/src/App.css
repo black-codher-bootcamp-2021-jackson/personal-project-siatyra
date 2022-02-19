@@ -1,79 +1,163 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Urbanist:wght@300&display=swap');
 
-body {
+html {
+  width: 100%;
+  margin: auto;
+  justify-content: center;
   background-color: #FEE3EC;
   color: #F037A5;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-family: 'Urbanist', Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
   cursor: pointer;
+  background-image: url(/Users/tyraanglin/dev/personal-project-siatyra/client/src/pexels-madison-inouye-1831234.jpg);
+  background-repeat: no-repeat;
 }
 
-main {
-
-    position: relative;
-    text-align: center;
-
+h3 {
+  font-family: 'Urbanist';
 }
 
-a.moopic {
+h2 {
+  font-family: 'Urbanist';
+}
+
+p {
+  font-family: 'Urbanist', Arial;
+}
+
+.home {
+  max-width: 500px;
+  margin: auto;
+  justify-content: center;
+}
+
+.body {
+  /* position: fixed;
+  align-content: center;
+  justify-self: center; */
+  width: 500px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.151);
+  z-index: 1;
+  border: 5px solid #fcebf1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  
+}
+
+.main {
+  width: 500px;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  
+  
+}
+
+
+
+img.moopic {
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: -1;
 }
 
-a.moopicreversed {
+img.moopicreversed {
   position: fixed;
   bottom: 0;
   right: 0;
+  z-index: -1;
 }
 
 button {
-  background: #5E5DF0;
-  border-radius: 999px;
+  border-radius: 5px;
+  background-color: rgb(245, 218, 223);
+  border: 2px solid #fcebf1;
   box-shadow: #5E5DF0 0 10px 20px -10px;
   box-sizing: border-box;
-  color: #FFFFFF;
   cursor: pointer;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 16px;
-  font-weight: 700;
+  font-family: 'Urbanist', Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 17px;
+  font-weight: 500;
   line-height: 24px;
-  opacity: 1;
-  outline: 0 solid transparent;
   padding: 8px 18px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   width: fit-content;
   word-break: break-word;
-  border: 0;
+  
 
 }
 
 nav {
-  display: inline-block;
-  width: 100%;
-  padding: 15px;
-  
+  display: flex;
+  justify-content: space-around;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
 
+nav > a {
+  padding: 5px;
+  font-family: 'Urbanist';
+  font-size: 20px;
+  font-weight: 150;
+  border: 4px solid #fcebf1;
+  border-radius: 5px;
+}
+
+nav > a:hover {
+  background-color: pink;
+  text-decoration: none;
+}
+
+a:visited {
+  color:#F037A5;
+  text-decoration: none;
+}
+
+a:active {
+  background-color: rgb(155, 126, 155);
+}
+
+a {
+  text-decoration: none;
+}
+
+div.header > h1 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 div.header {
   font-family: 'Oleo Script', cursive, Arial, Helvetica, sans-serif;
   font-size: 50px;
   display: inline-block;
-  color: #780288;
+  color: #947199;
   text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
-  border-bottom: 2px solid black;
+  align-items: center;
+  justify-content: center;
   
- 
+
   }
 
   div.header:after {
     content: attr(data-shadow);
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: .05em; left: .06em;
-    z-index: -1;
+    z-index: -0.9;
     text-shadow: none;
     background-image:
       linear-gradient(
@@ -84,7 +168,6 @@ div.header {
         transparent 0
         );
     background-size: .05em .05em;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   
     animation: shad-anim 15s linear infinite;
@@ -100,16 +183,17 @@ div.header {
 
 
 p.date {
-  font-size: smaller;
+  font-family: 'Urbanist', Arial;
   color: #36054d;
-  font-weight: 500;
+  padding: 5px;
 }
 
 div.new_tweet {
   color: black;
+  padding: 10px;
 }
 
-div.tweet_container {
+div.tweet-container {
   position: relative;
   align-items: center;
   justify-content: center;
@@ -121,7 +205,10 @@ div.tweetuser {
   align-items: center;
   justify-content: center;
   height: 100%;
+  padding: 10px;
   margin: 20px;
+  font-family: 'Urbanist', Arial;
+  font-size: 18px
 
 }
 
@@ -129,16 +216,14 @@ div.tweetuser {
 
 .username {
   text-align: center;
-  padding: 15px;
+  font-family: 'Urbanist', arial;
+  padding: 5px;
   color: rgb(17, 0, 44);
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #FEE3EC; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .05em; /* Adjust as needed */
-  animation: 
-    typing 5s steps(40, end),
-    blink-caret .4s step-end;
+
+}
+
+.about-container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
@@ -179,15 +264,4 @@ div.tweetuser {
   to {
     transform: rotate(360deg);
   }
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #FEE3EC}
 }

@@ -1,17 +1,15 @@
-// import PropTypes from 'prop-types';
+const LiveTweet = ( props ) => {
 
-// const dojaTweet = {twitterTweet};
+    const liveTweet = props.liveTweet;
 
-// console.log(Object.keys(dojaTweet));
-
-// const LiveTweets = ({twitterTweet}) => {
-//     return ( 
-//         <div>
-//             {twitterTweet.map(dojatweet => (
-//                 <p key={dojatweet.id}>{dojatweet.text}</p>
-//             ))}
-//         </div>
-//      );
-// }
+    return ( 
+        <div className="livetweet-container">
+        <div id="livetweet">
+            <h3> Latest news:</h3>
+          {liveTweet}
+        </div>
+        </div>
+     );
+};
  
-// export default LiveTweets;
+export default LiveTweet;

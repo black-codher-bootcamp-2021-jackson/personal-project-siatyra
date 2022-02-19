@@ -3,8 +3,10 @@ import LiveTweet from "./LiveTweet";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import { getAllProfiles } from "./services/profileService";
+import { getNewTweets } from "./services/twitterService";
 import TweetList from "./tweetList";
 import './App.css';
+import LiveTweets from "./LiveTweet";
 
 
 
@@ -12,24 +14,38 @@ import './App.css';
 
 function App() {
   const [profiles, setProfiles] = useState(null);
-  const [randomTweet, setRandomTweet] = useState({})
+  const [randomTweet, setRandomTweet] = useState({});
+  const [twitterTweet, setTwitterTweet] = useState({});
+  const [newTweet, setNewTweet] = useState([]);
   // const { latestTweet, loading, error } = LiveTweet("https://api.twitter.com/2/users/568545739/tweets?tweet.fields=created_at&expansions=author_id&user.fields=created_at&max_results=5");
 
   
 
   useEffect(() => {
-    async function getProfiles() {
-      if (!profiles) {
+    async function getTweets() {
+      if (!profiles && twitterTweet) {
         const response = await getAllProfiles();
-        setProfiles(response) 
+        setProfiles(response);
+
+        const responseTwo = await getNewTweets();
+        console.log(responseTwo);
+        setTwitterTweet(responseTwo);
+
         const getRandomTweet = response[Math.floor(Math.random() * response.length)];
-        console.log(getRandomTweet)
-        setRandomTweet(getRandomTweet)
+        console.log(getRandomTweet);
+        setRandomTweet(getRandomTweet);
+
+        const getNewTweet = responseTwo.data[0];
+        console.log(getNewTweet);
+        setNewTweet(getNewTweet);
+        
       }
+
+      
     }
 
-    getProfiles();
-  }, [profiles]);
+    getTweets();
+  }, [profiles, twitterTweet]);
 
 
   const renderTweet = (user) => {
@@ -49,7 +65,11 @@ function App() {
     );
   };
 
+
+ 
+
   const tweet = renderTweet(randomTweet);
+  const liveTweet = renderTweet(newTweet)
 
   const handleClick = (e) => {
     window.location.reload(false);
@@ -87,6 +107,8 @@ function App() {
         {/* <button onClick={() => setClickTweet(randomTweet)}>Random</button> */}
         <div className="tweet_container">
           <div id="tweet">
+            {liveTweet}
+            {/* <h2>DojaCat: {twitterTweet.data.text}</h2> */}
             {tweet}
           </div>
         </div>

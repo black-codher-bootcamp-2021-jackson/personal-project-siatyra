@@ -5,7 +5,7 @@ const LiveTweet = ( props ) => {
     return ( 
         <div className="livetweet-container">
         <div id="livetweet">
-            <h3> Latest news:</h3>
+            <h2> latest news</h2>
           {liveTweet}
         </div>
         </div>

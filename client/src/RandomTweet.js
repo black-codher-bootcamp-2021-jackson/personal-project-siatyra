@@ -1,10 +1,27 @@
-function getRandomTweet({profiles, renderProfile}) {
-    
-    if (profiles) {
-        return profiles[Math.floor(Math.random() * profiles.length)];
-        renderProfile(profiles)
-    }
-    else {console.log("no random profiles found");}
-}
+const RandomTweet = ( props ) => {
 
-export default getRandomTweet;
+    const tweet = props.tweet;
+
+    const handleClick = (e) => {
+        window.location.reload(false);
+      }
+
+    return ( 
+        <div className="randomtweet">
+            <h2>random</h2>
+            <p className="explainer-text">click the button for a new tweet</p>
+       
+        <div className="tweet-container">
+          <div id="tweet">
+            {tweet}
+          </div>
+        </div>
+               <div className="new_tweet">
+               <button onClick={(e) => handleClick(e)}>beep boop clicky</button>
+             </div>
+
+             </div>
+     );
+}
+ 
+export default RandomTweet;

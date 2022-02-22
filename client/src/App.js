@@ -10,11 +10,8 @@ import LiveTweet from "./LiveTweet";
 import About from "./About";
 import NotFound from "./NotFound";
 import TypewriterComponent from "typewriter-effect";
+import RandomTweet from "./RandomTweet";
 
-
-
-
-// import { Router, Routes, Route } from 'react-router-dom'
 
 function App() {
   const [profiles, setProfiles] = useState(null);
@@ -59,17 +56,15 @@ function App() {
   const renderTweet = (user) => {
     if (loaded) {
     return (
+
       <div className="randomTweet" key={user.id}>
+        
         <div className="tweetuser">
-        {/* <img src="https://i.pinimg.com/564x/da/a6/48/daa6482e6ce60b0e3b5724a0dd85c2f6.jpg" height="70px" width="70px" id="icon"></img>  */}
         <TypewriterComponent
         onInit={(typewriter => {
           typewriter.typeString(`DojaCat: ${user.text}`)
           .start();
-          
-        })}
-        // <h3 className="username"> DojaCat: {`${user.text}`}</h3>
-        />
+        })}/>
         </div>
 
         <div classname="tweetdate">
@@ -88,25 +83,23 @@ function App() {
 
 
   return (
-    <div className="body">
-
-    
+    <div className="app-container">
       <div className="header">
-            <h1>Doja tweets</h1>
+            <h1>doja tweets</h1>
         </div>
 
         <Navbar />
+    <div className="body">
 
       <div className="main">
-
         <Routes>
           <Route path="/" element={<Home tweet={tweet} />}></Route>
-          <Route path="about" element={<About />}></Route>
+          <Route path="random" element={<RandomTweet tweet={tweet} />}></Route>          <Route path="about" element={<About />}></Route>
           <Route path="*" element={<NotFound />}></Route>
           <Route path="livetweet" element={<LiveTweet liveTweet={liveTweet} />}></Route>
           <Route path="all" element={<TweetList profiles={profiles} renderTweet={renderTweet} />}></Route>
         </Routes>
-        </div>
+      </div>
 
         <div className="pics">
         <img
@@ -122,6 +115,7 @@ function App() {
         border="0" />
         </div>
 
+    </div>
     </div>
 
   );

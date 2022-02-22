@@ -1,28 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Urbanist:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Press+Start+2P&family=Urbanist:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Oleo+Script:wght@700&family=Press+Start+2P&family=Urbanist:wght@300&display=swap');
 
 html {
   width: 100%;
   margin: auto;
   justify-content: center;
   background-color: #FEE3EC;
-  color: #F037A5;
+  color: #741b50;
   font-family: 'Urbanist', Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
   cursor: pointer;
   background-image: url(/Users/tyraanglin/dev/personal-project-siatyra/client/src/pexels-madison-inouye-1831234.jpg);
-  background-repeat: no-repeat;
+}
+
+
+h2 {
+  font-family: 'Press Start 2P', cursive;;
+  font-size: 35px;
+  color:rgb(114, 28, 71)
 }
 
 h3 {
-  font-family: 'Urbanist';
+  font-family: 'Press Start 2P', cursive;
+  /* text-shadow: .04em .15em 0 rgb(48, 2, 27); */
+  font-size: 20px;
+  -webkit-text-stroke-width: .001;
+  -webkit-text-stroke-color: rgb(233, 204, 214);
+  color: #3f2c74;;
+  
 }
 
-h2 {
-  font-family: 'Urbanist';
+h4 {
+  font-family: 'Press Start 2P';
+  color: #3f2c74;
+  font-size: 15px;
+}
+
+h5 {
+  font-family: 'Press Start 2P';
+  font-size: 12px;
 }
 
 p {
   font-family: 'Urbanist', Arial;
+  font-size: 18px;
 }
 
 .home {
@@ -59,14 +81,14 @@ p {
 
 
 
-img.moopic {
+.moopic {
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: -1;
 }
 
-img.moopicreversed {
+.moopicreversed {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -96,31 +118,34 @@ button {
 
 nav {
   display: flex;
-  justify-content: space-around;
-  width: 350px;
+  justify-content: space-between;
+  width: 530px;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px;
+  padding: 15px;
 }
 
 nav > a {
   padding: 5px;
   font-family: 'Urbanist';
-  font-size: 20px;
-  font-weight: 150;
+  font-size: 24px;
+  color: rgb(114, 28, 71);
+  font-weight: 500;
   border: 4px solid #fcebf1;
   border-radius: 5px;
 }
 
 nav > a:hover {
-  background-color: pink;
+  background-color: rgb(226, 184, 224);
+  border: 4px solid #725ab6;
   text-decoration: none;
 }
 
 a:visited {
-  color:#F037A5;
+  color: rgb(70, 18, 27);
   text-decoration: none;
 }
+
 
 a:active {
   background-color: rgb(155, 126, 155);
@@ -128,25 +153,32 @@ a:active {
 
 a {
   text-decoration: none;
+  font-family: 'Urbanist';
+  font-size: 20px;
+  color:rgb(161, 80, 121);
 }
 
-div.header > h1 {
+
+.header > h1 {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   margin-top: 1px;
   margin-bottom: 1px;
-  margin-left: 1px;
-  margin-right: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  text-align: center;
+  
 }
 
-div.header {
+.header {
   font-family: 'Oleo Script', cursive, Arial, Helvetica, sans-serif;
-  font-size: 50px;
-  display: inline-block;
-  color: #947199;
+  font-size: 60px;
   text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   
 
   }
@@ -155,8 +187,9 @@ div.header {
     content: attr(data-shadow);
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: .05em; left: .06em;
+    top: .05em; 
+    margin-left: auto;
+    margin-right: auto;
     z-index: -0.9;
     text-shadow: none;
     background-image:
@@ -182,25 +215,25 @@ div.header {
   
 
 
-p.date {
+.date {
   font-family: 'Urbanist', Arial;
   color: #36054d;
   padding: 5px;
 }
 
-div.new_tweet {
+.new_tweet {
   color: black;
   padding: 10px;
 }
 
-div.tweet-container {
+.tweet-container {
   position: relative;
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
 }
 
-div.tweetuser {
+.tweetuser {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -226,6 +259,56 @@ div.tweetuser {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
+
+.home-intro {
+  padding: 10px;
+}
+
+.home-about {
+  padding: 10px;
+}
+
+.home-pages {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#root > div > div.body > div.main > div > div.home-pages > div > a:visited {
+  color:rgb(70, 18, 27)
+}
+
+.home-protest {
+  padding: 10px;
+}
+
+.content-warning {
+  padding: 10px;
+}
+
+.about-container {
+  padding: 5px;
+}
+
+.about-doja-cat {
+  padding: 10px;
+}
+
+.about-me {
+  padding: 10px;
+}
+
+.about-black-codher {
+  padding: 10px;
+}
+
+.about-app {
+  padding: 10px;
+}
+
+
+
 
 .App {
   text-align: center;

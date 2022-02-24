@@ -66,15 +66,15 @@ const About = () => {
 
                 <br></br>
 
-                <h4>styling considerations</h4>
+                <h4>styling</h4>
 
                 <p>I wanted the app to be responsive, so added styling that would support the app on mobile view.</p>
 
-                <h5>Accessibilty</h5>
+                <h5>accessibilty</h5>
 
                 <p>The images used are not essential, so don't include detailed src.</p>
                 <p>There is enough colour contrast for all the text the app to be visible</p> 
-                <p>However, the font used (Urbanist) is slim, so I increased the size of the text</p>
+                <p>However, the font used (Urbanist) is slim, so I increased the size of the text for readability</p>
 
             </div>
         </div>

@@ -15,7 +15,7 @@ const Home = () => {
             </div>
 
         <div className="home-pages">
-            <h3>main pages:</h3>
+            <h3>main pages</h3>
                 <div className="home-pages-links">
                 <a href="/all">library of tweets</a>
                 <br></br>
@@ -35,9 +35,8 @@ const Home = () => {
                 </div>
             
             <div className="content-warning">
-                <h4>disclaimer</h4>
-            <p>this app has no objective besides entertainment</p> 
-            <p>be aware that some tweets may contain explicit language</p>
+                <h4>content warning</h4>
+            <p>some tweets may contain explicit language</p>
             </div>
         </div>
      );

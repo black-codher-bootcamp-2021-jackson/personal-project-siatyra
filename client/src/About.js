@@ -8,10 +8,11 @@ const About = () => {
 
                 <h3>doja cat</h3>
 
-                <p>Doja cat is a pop artist who has been making music since she was a teenager. She rose to fame after the release of "Mooo!" which quickly became a meme in pop culture thanks to its absurd lyrics.</p>
+                <p>Doja cat is a pop artist who has been making music since she was a teenager. She rose to fame after the release of <a href="https://www.youtube.com/watch?v=mXnJqYwebF8"><b>"Mooo!"</b></a> which quickly became a meme in pop culture thanks to its absurd lyrics.</p>
                 <p>After, she was able to hold onto fame by having an industrious online presence.</p>
                 <p>A large portion of what she posts online can be described as "shitposting" - posts with little to no sincere or insightful substance. Shitposts are generally surreal and have no context.</p>
                 <p>I made this app to give a platform to some of these posts because I find them very funny.</p>
+                <p>If you'd like to know more, you can read more about Doja Cat on Hip Hop Scriptures <a href="https://www.hiphopscriptures.com/doja-cat#:~:text=Doja%20Cat%20is%20an%20American,apps%20like%20TikTok%20and%20Instagram"><b>here</b></a>.</p>
 
             </div>
 
@@ -20,10 +21,10 @@ const About = () => {
                 <h3>me</h3>
 
                 <p>I'm Sia Tyra Anglin, the proud creator of this app!</p>
-                <p>I've had a vested interest in software development for many years now and received the opportunity to explore this career avenue further as part of the Black Codher Full-Stack development course over the past 6 months.</p>
-                <p>At the moment, I work as a customer support specialist in ecommerce. I've found the concepts I've learned on the course immensely useful for better understanding my current job role.</p>
+                <p>I've had a vested interest in software development since I was a teenager curating themes on the blogging platform Tumblr. I received the wonderful opportunity to explore this as a career avenue thanks to receiving a scholarship for the Black Codher Full-Stack development bootcamp.</p>
+                <p>At the moment, I work as a customer support specialist in ecommerce. I've found the concepts on the course immensely useful in my current job role and am pursuing a career in software development.</p>
                 <p>I graduated from my degree in English Literature and Language in 2020. Through my study I took additional courses in 3 different languages.</p>
-                <p>I made this app because I thought it would be a fun challenge that would bring together the concepts I have learned.</p>
+                <p>I made this app because I thought it would be a fun challenge that would bring together the course content.</p>
             </div>
 
             <div className="about-black-codher">
@@ -32,6 +33,8 @@ const About = () => {
 
                 <p>The Black Codher Bootcamp is an organisation run by Coding Black Females and Niyo Enterprise that aims to get more black women into technology.</p>
                 <p>They teach technical skills including software programming, data management, analytics and design.</p>
+                <p>You can read more about the Black Codher Bootcamp <a href="https://blackcodher.com/"><b>here</b></a>.</p>
+                <br></br>
 
                 <h4>topics covered</h4>
 
@@ -55,10 +58,9 @@ const About = () => {
                 <p>Then, I built two servers using Node.js - one to get the data from this database, the other to get the latest tweets from twitter.</p>
                 <p>After this, I imported the data from the servers into my React client. </p>
                 <p>Within the client, I used useState and useEffect to pull the tweets that I wanted from the data and set a loading state.</p>
-                <p>I created a render function that would identify each tweet by the id key, then render the text and date of the tweet. I also used the TypeWriter package component in react to add a typing effect to any tweets rendered.</p>
-                <a href="https://www.npmjs.com/package/typewriter-effect">credits to the typewriter package here</a>
+                <p>I created a render function that would identify each tweet by the id key, then render the text and date of the tweet. I also used the <a href="https://www.npmjs.com/package/typewriter-effect">TypeWriter package component</a> in react to add a typing effect to any tweets rendered.</p>
                 <p>I then created objects out of the tweets I wanted to render (the latest tweet, and the random tweet).</p>
-                <p>I passed the random and live tweet objects to the latest/random/library tweets components. The latest component displays the latest tweet that was made.</p>
+                <p>I passed the random and live tweet objects to the latest/random/library tweets components. The latest component displays the latest 5 tweets.</p>
                 <p>The random component has a button which refreshes the page each time it is clicked (thus pulling a new tweet from the database each time).</p>
                 <p>The library component maps through my database and displays all the tweets there.</p>
                 <p>I then used routing to show all those components as the pages that appear in the navigation.</p>

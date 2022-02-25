@@ -36,7 +36,7 @@ function App() {
         console.log(getRandomTweet);
         setRandomTweet(getRandomTweet);
 
-        const getNewTweet = responseTwo.data[0];
+        const getNewTweet = responseTwo.data;
         console.log(getNewTweet);
         setNewTweet(getNewTweet);
 
@@ -78,8 +78,9 @@ function App() {
     return (<p>typing...</p>);
   };
 
+ 
+
   const tweet = renderTweet(randomTweet);
-  const liveTweet = renderTweet(newTweet)
 
 
   return (
@@ -96,12 +97,13 @@ function App() {
           <Route path="/" element={<Home tweet={tweet} />}></Route>
           <Route path="random" element={<RandomTweet tweet={tweet} />}></Route>          <Route path="about" element={<About />}></Route>
           <Route path="*" element={<NotFound />}></Route>
-          <Route path="livetweet" element={<LiveTweet liveTweet={liveTweet} />}></Route>
+          <Route path="livetweet" element={<LiveTweet newTweet={newTweet} renderTweet={renderTweet} />}></Route>
           <Route path="all" element={<TweetList profiles={profiles} renderTweet={renderTweet} />}></Route>
         </Routes>
       </div>
 
         <div className="pics">
+
         <img
         className="moopic"
         src="https://i.ibb.co/JR2Y29k/moo-removebg-preview.png" 

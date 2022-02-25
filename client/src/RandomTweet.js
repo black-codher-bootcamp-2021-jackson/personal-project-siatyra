@@ -9,7 +9,7 @@ const RandomTweet = ( props ) => {
     return ( 
         <div className="randomtweet">
             <h2>random</h2>
-            <p className="explainer-text">click the button for a new tweet</p>
+            <h4 className="explainer-text">click the button for a new tweet</h4>
        
         <div className="tweet-container">
           <div id="tweet">

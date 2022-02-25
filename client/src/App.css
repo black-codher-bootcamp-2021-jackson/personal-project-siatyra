@@ -317,7 +317,7 @@ a {
 
 }
 
-@media (max-width: 376px) {
+@media (max-width: 375px) {
 
   html {
     width: 100%;
@@ -408,7 +408,7 @@ a {
 
   .header {
     font-family: 'Oleo Script', cursive, Arial, Helvetica, sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
     align-items: center;
     justify-content: center;

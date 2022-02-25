@@ -95,7 +95,8 @@ function App() {
       <div className="main">
         <Routes>
           <Route path="/" element={<Home tweet={tweet} />}></Route>
-          <Route path="random" element={<RandomTweet tweet={tweet} />}></Route>          <Route path="about" element={<About />}></Route>
+          <Route path="random" element={<RandomTweet tweet={tweet} />}></Route>
+          <Route path="about" element={<About />}></Route>
           <Route path="*" element={<NotFound />}></Route>
           <Route path="livetweet" element={<LiveTweet newTweet={newTweet} renderTweet={renderTweet} />}></Route>
           <Route path="all" element={<TweetList profiles={profiles} renderTweet={renderTweet} />}></Route>

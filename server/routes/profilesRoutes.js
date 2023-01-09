@@ -42,8 +42,6 @@ const profileRoutes = (app) => {
       profile,
     });
   });
-
-
 };
 
 module.exports = profileRoutes;

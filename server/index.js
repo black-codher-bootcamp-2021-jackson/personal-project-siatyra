@@ -1,14 +1,11 @@
 require("dotenv").config();
+require("./models/Profiles"); 
 
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-
-require("./models/Profiles"); 
-
-
-
 const app = express();
+const PORT = process.env.PORT;
 
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
@@ -17,12 +14,9 @@ mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
 
 app.use(bodyParser.json());
 
-
 require("./routes/profilesRoutes")(app); 
 require("./routes/twitterRoutes")(app);
 
-
-const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`API running on port ${PORT}`);
 });
